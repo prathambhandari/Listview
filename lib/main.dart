@@ -8,8 +8,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-        title: "ListView.builder",
-        theme: new ThemeData(primarySwatch: Colors.green),
+        title: "ListView",
+        theme: new ThemeData(primarySwatch: Colors.blueGrey),
         debugShowCheckedModeBanner: false,
         home: new ListViewBuilder());
   }
@@ -19,7 +19,7 @@ class ListViewBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("ListView.builder")),
+      appBar: AppBar(title: Text("ListView")),
       body: ListView.builder(
           itemCount: 5,
           itemBuilder: (BuildContext context, int index) {
@@ -27,7 +27,7 @@ class ListViewBuilder extends StatelessWidget {
                 leading: Icon(Icons.list),
                 trailing: Text(
                   "GFG",
-                  style: TextStyle(color: Colors.green, fontSize: 15),
+                  style: TextStyle(color: Colors.blueGrey, fontSize: 15),
                 ),
                 title: Text("List item $index"));
           }),
